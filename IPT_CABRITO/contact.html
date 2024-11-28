@@ -3,6 +3,157 @@
 <head>
     <link rel="stylesheet" href="homepage.css">
     <title>Contact</title>
+    <style>
+        body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(135deg, #ffd3d3, #f4f4f4);
+    color: #5d5151;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+}
+
+/* Header */
+header {
+    background-color: #333;
+    padding: 10px 0;
+}
+
+header ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 20px;
+}
+
+header ul li {
+    margin: 0 15px;
+}
+
+header ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+header ul li a:hover {
+    color: #f4a261;
+}
+
+/* Main Container */
+.main-container {
+    display: flex; /* Use flexbox for layout */
+    justify-content: space-between; /* Space between left and right sections */
+    align-items: flex-start; /* Align items to the start */
+    max-width: 1200px; /* Max width for better layout */
+    margin: 40px auto; /* Center the container */
+}
+
+/* Left Content */
+.left-content {
+    flex: 1; /* Allow this section to take available space */
+    text-align: left; /* Align text to the left */
+}
+
+h3 {
+    font-size: 28px; /* Increased font size */
+    margin-top: 20px; /* Adjust margin for spacing */
+}
+
+h1 {
+    font-size: 56px; /* Increased font size */
+    margin: 10px 0;
+}
+
+p {
+    font-size: 20px; /* Increased font size */
+    margin: 5px 0 20px;
+}
+
+/* Social Icons */
+.social-icons {
+    display: flex;
+    justify-content: flex-start; /* Align icons to the left */
+    margin-top: 20px;
+}
+
+.social-icons a {
+    display: inline-block;
+    margin: 0 15px; /* Increased margin for spacing */
+}
+
+.social-icons img {
+    width: 40px; /* Increased icon size */
+    height: 40px;
+    transition: transform 0.3s;
+}
+
+.social-icons img:hover {
+    transform: scale(1.2);
+}
+
+/* Button */
+button {
+    display: block; /* Centers the button */
+    margin: 20px 0; /* Adds space around the button */
+    padding: 12px 24px; /* Increased padding for button */
+    background: linear-gradient(45deg, #333, #f4a261);
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px; /* Increased font size for button */
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+button:hover {
+    transform: scale(1.05);
+}
+
+/* Card Style */
+.card {
+    display: flex;
+    align-items: center;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    padding: 30px; /* Increased padding around the card content */
+    max-width: 700px; /* Increased max width for the card */
+    text-align: left;
+    transition: transform 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-5px); /* Lift the card on hover */
+}
+
+.card-image {
+    margin-left: 20px;
+    flex-shrink: 0;
+}
+
+.card-image img {
+    width: 400px; /* Increased image width */
+    height: 300px; /* Increased image height */
+    border-radius: 10px; /* Rounded corners for the image */
+    object-fit: cover;
+}
+footer {
+    background-color: #333; /* Dark background for the footer */
+    color: #fff; /* White text for contrast */
+    text-align: center; /* Center align the text */
+    padding: 5px 5px; /* Padding for spacing */
+    position: relative; /* To maintain its position in the layout */
+    bottom: 0;/* Position it at the bottom */
+    width: 100%; /* Full width footer */
+    margin-top: 0px; /* Space above the footer */
+    position: absolute;
+}
+
+    </style>
 </head>
 <body>
     <header>
